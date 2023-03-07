@@ -31,7 +31,7 @@ class GraphDatastoreStack(cdk.Stack):
         )
 
         bundling = cdk.BundlingOptions(
-            image=cdk.DockerImage("public.ecr.aws/sam/build-python3.8"),
+            image=cdk.DockerImage("public.ecr.aws/sam/build-python3.9"),
             command=[
                 "bash",
                 "-c",
