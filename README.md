@@ -16,6 +16,7 @@
 
 - Python's [FastAPI](https://fastapi.tiangolo.com/) with [Strawberry](https://strawberry.rocks/) for the GraphQL layer
 - deployed as an AWS Lambda Function
+- [PynamoDB](https://pynamodb.readthedocs.io/en/stable/) for interfacing with DynamoDB
 - each field directly resolves using a "get" request for a single item in the DynamoDB table
   - no complex queries or joins necessary under the hood
 - relationships are stored as a list of UUIDs and resolved through normal Strawberry field resolution
